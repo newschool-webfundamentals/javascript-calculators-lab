@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Registration calculator</title>
+
+     <!-- Compiled and minified materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <!-- jQuery & app js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h2 class="center-align">Calculators</h2>
+      </div>
+
+      <div class="row">
+        <!-- Registration calculator -->
+        <div class="col m5 offset-m1">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Registration calculator</span>
+              <p>Use the calculator to discover the date and time of your undergraduate New School Fall 2016 registration</p>
+              <input type="number" id="credit-amount" placeholder="How many credits have you earned?">
+              <p id="result" class="center-align"></p>
+            </div>
+
+            <div class="card-action">
+              <button id="registration-submit" class="waves-effect waves-light btn red darken-2 center-align">Show me my time!</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bouncer -->
+        <div class="col m5">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Bouncer</span>
+              <p>There's a bouncer blocking your way to the club.</p>
+              <input type="number" id="age" placeholder="How old are you?">
+              <p id="bar-result" class="center-align"></p>
+            </div>
+
+            <div class="card-action">
+              <button id="bar-submit" class="waves-effect waves-light btn red darken-2 center-align">Let me in!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Pass or fail -->
+        <div class="col m5 offset-m1">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Pass or fail</span>
+              <p>If your grade is greater than 60, you've passed. Otherwise, you fail.</p>
+              <input type="number" id="grade" placeholder="What was your grade?">
+              <p id="grade-result" class="center-align"></p>
+            </div>
+
+            <div class="card-action">
+              <button id="grade-submit" class="waves-effect waves-light btn red darken-2 center-align">How did I do?</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rent affordability -->
+        <div class="col m5">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Is your rent affordable?</span>
+              <p>Families who pay more than 30 percent of their income for housing are considered cost burdened</p>
+              <input type="number" id="income" placeholder="What's your income?'">
+              <p id="rent-result" class="center-align"></p>
+            </div>
+
+            <div class="card-action">
+              <button id="rent-submit" class="waves-effect waves-light btn red darken-2 center-align">Is it?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
