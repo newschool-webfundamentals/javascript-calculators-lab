@@ -42,9 +42,24 @@ $(function() {
   //Grade
   $("#grade-submit").click(function() {
     var gradeString = $("#grade").val();
+    var grade = parseInt(gradeString);
 
-    $("#grade-result").text("Opps, I'm broken! Fix me.");
+    if (grade >= 60) {
+      $("#grade-result").text("You passed!");
+    } else if (grade <= 59) {
+      $("#grade-result").text("Time for extra credit, you're failing!");
+    }
   });
 
   //Is your rent affordable?
+  $("#rent-submit").click(function() {
+    var incomeString = $("#income").val();
+    var income = parseInt(incomeString);
+
+    var thirtyPercent = income * 0.3;
+    var monthly = thirtyPercent / 12;
+
+
+    $("#rent-result").text("You should not pay more than $" + monthly + " each month.");
+  });
 });
