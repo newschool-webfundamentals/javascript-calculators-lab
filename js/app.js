@@ -28,7 +28,7 @@ $(function() {
   });
 
   //Bouncer
-  $("#bar-submit").click(function() {
+  $("#age").change(function() {
     var ageString = $("#age").val();
     var age = parseInt(ageString);
 
