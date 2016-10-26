@@ -35,7 +35,7 @@ $(function() {
     if (age >= 21) {
       $("#bar-result").text("Ok, come on in.");
     } else {
-      $("#bar-result").text("You're too young, scram.");
+      //Fix me! What happens when I'm under 21?
     }
   });
 
